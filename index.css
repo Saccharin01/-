@@ -8,12 +8,13 @@
   background-color: rgb(255, 160, 160);
 }
 .cardContainer{
-  overflow: auto;
+  overflow: hidden;
   position: absolute;
   z-index: 1;
   left: 20%;
   top: 40%;
   width: 600px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   background-color: rgb(105, 105, 245);
@@ -22,5 +23,6 @@
 .card{
   margin-bottom: 20px;
   background-color: bisque;
-  height: 400px;
+  height: 300px;
+  width: 600px;
 }
