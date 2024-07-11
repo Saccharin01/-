@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="root"></div>
+<script>
+const tagComponent = (tagName, textNode,...attribute)=>{
+  return `<${tagName} ${attribute}>${textNode}</${tagName}>`
+}
+const cardContainer = tagComponent("div","","class = cardContainer")
+const card = tagComponent("div","","class = card")
+const h2 = tagComponent("h1","제목")
+const h6 = tagComponent("h6","내용내용")
+
+const root = document.getElementById("root")
+root.innerHTML = cardContainer
+
+
+</script>
+</body>
+</html>
