@@ -43,7 +43,7 @@ const tagComponent = (tagName, textNode,...attribute)=>{
   return `<${tagName} ${attribute}>${textNode}</${tagName}>`
 }
 
-const appender = (parent, children)=>{
+const appender = (parent, ...children)=>{
   const container = document.querySelectorAll(`.${parent}`)
   container.forEach((element)=>{
     element.innerHTML = children
@@ -62,8 +62,8 @@ root.innerHTML = cardContainer
 
 
 
-appender("cardContainer",card)
-appender("cardContainer",card2)
+appender("cardContainer",[card,card2])
+// appender("cardContainer",card2)
 
 
 
