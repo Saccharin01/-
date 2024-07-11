@@ -17,6 +17,7 @@
     .cardContainer{
       overflow: auto;
       position: absolute;
+      z-index: 1;
       left: 20%;
       top: 40%;
       width: 600px;
@@ -56,5 +57,13 @@
       </div>
     </div>
   </div>
+  <script>
+    const root = document.getElementById("root")
+    const cardContainer = document.createElement("div")
+    root.appendChild(cardContainer)
+
+    
+
+  </script>
 </body>
 </html>
