@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    #root{
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(255, 160, 160);
+    }
+    .cardContainer{
+      overflow: auto;
+      position: absolute;
+      left: 20%;
+      top: 40%;
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(105, 105, 245);
+
+    }
+    .card{
+      margin-bottom: 20px;
+      background-color: bisque;
+      height: 400px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class = cardContainer>
+      <div class="arrowBtn">></div>
+      <div class="card">
+        <div>
+          <h1>제목</h1>
+        </div>
+        <div>
+          <h6>내용</h6>
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <h1>제목</h1>
+        </div>
+        <div>
+          <h6>내용</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
