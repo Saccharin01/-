@@ -1,13 +1,11 @@
-
-
 interface tagInterface {
-  textNode : string
+  textNode? : string
   className? : string
   children? : React.ReactNode
 }
 
 
-const DivComponent : React.FC<tagInterface> = ({textNode, className, children }) => {
+const DivComponent : React.FC<tagInterface> = ({textNode, className, children}) => {
   return (
     <div className = {className}>
       {textNode}

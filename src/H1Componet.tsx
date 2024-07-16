@@ -6,7 +6,7 @@ interface tagInterface{
 }
 
 
-const H1Component :React.FC<tagInterface>= ({textNode, className})=>{
+const H1Component :React.FC<tagInterface>= ({className, textNode})=>{
   return(
     <h1 className={className}>{textNode}</h1>
   )
