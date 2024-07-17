@@ -10,12 +10,13 @@ import React from "react";
 
 
 const CardComponent:React.FC = ()=>{
-
+const length = Array.isArray(baseData.card.textNode) ? baseData.card.textNode.length : 1
   return (
+
     <DivComponent className={baseData.cardContainer.class}>
+
         <DivComponent className={baseData.card.class}>
-          <H1Component textNode={baseData.h1.textNode[0]}/>
-          <H6Component textNode={baseData.h6.textNode[0]}/>
+
         </DivComponent>
       </DivComponent>
   )
