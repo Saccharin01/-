@@ -1,4 +1,3 @@
-import React from "react"
 import  ReactDOM  from "react-dom/client"
 import CardAssembly from "./CardComponent";
 import "./style.css"
