@@ -1,7 +1,7 @@
 import DivComponent from "./DivComponent";
 import H1Component from "./H1Componet";
 import H6Component from "./H6Component";
-import baseData from "./baseData"
+import baseData from "./static/baseData"
 import React from "react";
 
 
